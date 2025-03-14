@@ -235,6 +235,20 @@ local function PlayerAdded(Player)
                     game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(endMsg))
                 end
             end
+            if finalMsg == getgenv().prefix .. "wallet" then
+                for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                    if v.name == "Wallet" then
+                        v.Parent = game.Players.LocalPlayer.Character
+                    else
+                        local localPlayer = game.Players.LocalPlayer
+                        local humanoid = localPlayer.Character:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            humanoid:UnequipTools()
+                        end
+                    end
+                end
+
+            end
             if finalMsg == getgenv().prefix.."ad" or finalMsg == getgenv().prefix.."ad "..plrLocal.Name:lower() then
                 if not getgenv().adverting then
                     getgenv().adverting = true
