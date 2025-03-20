@@ -6,7 +6,7 @@ _G.LSDropper = {
     
     -- alts: Put all alt user IDs here
     alts = {
-        2939174150,
+        8055468531,
         7178503675,
         7707204045,
         7707164601,
