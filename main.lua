@@ -15,6 +15,7 @@ _G.LSDropper = {
         8055473927,
         7707209002,
         8055468531,
+        7707263046,
     },
     
     -- Prefix: Enter the prefix before each command.
