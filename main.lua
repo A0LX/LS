@@ -1,20 +1,51 @@
-script_key = 'joIBLGqlUfbonOcQoYjMtYfclJUbDVVQ'
-getgenv().AutofarmSettings = {
-    ["Fps"] = 10,
-    ["InstaTP"] = true,
-    ["Underground"] = true,
+getgenv()._=
+"Join discord.gg/msgabv2t9Q | discord.gg/stando to get latest update ok bai >.< | If you pay for this script you get scammed, this script is completely free ok"
+--[[
 
-    ["Webhook"] = {
-        ["URL"] = "https://discord.com/api/webhooks/1349392866446807050/GGyeqFg5e8JxllAJWpyxFRAT4DZWxMQVTmDMg9cCLFctrJDSQ-hp5lqIzPOVANpT2lTF",
-        ["Interval"] = 10
-    },
+To get started in "getgenv().Owner" put the username you want to control.
 
-    ["Serverhop"] = {
-        ["Cycle"]   = 25,        -- 1 = After dying once.
-        ["Time"]    = 0,        -- 1 = After 1 Minute.
-        ["Kick"]    = false,    -- true = After getting kicked.
-        ["Blacklisted_IDs"] = { 241714165, 7707159035, 7707263046, 7707251668, 8055468531, 2939174150, 7707209002, 7178503675, 8055473927, 2827160867, 8055446371, 7707261230, 228432957, 3034352629, 7707264889, 7707164601, 7707204045, 8195210, 439942262, 93101606, 163721789, 3944434729, 4255947062, 1830168970, 29242182 } -- If UserID was found ingame, Detects new joining players too.
-    },
-    " warlocks atm farm - @snuffing "
-}
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2f5a5d4b9fc7ed0f115580a53bfab777.lua"))()
+!! \\ MAKE SURE THE OWNER AND STAND ACCOUNT ARE IN SAME SERVER // !!
+
+--// Example \\
+Before --> getgenv().Owner = "OWNER_USERNAME_HERE"
+After  --> getgenv().Owner = "XK5NG"
+
+^^ --> This is just the example don't put the username herez]]
+
+getgenv().Owner = "AlexedSMG"
+
+getgenv().Configuration = {
+['Fps'] = 45, --Fps cap [if supported]
+['Msg'] = 'Yare Yare Daze.', --When You Say [/e msg] It Makes All The Alts Say That Message
+['CrewID'] = 32570691, --Must join group
+['Attack'] = 'Heavy', --[Heavy | Light] Heavy = Super Punch Light = Spam Punch
+['TPMode'] = 'Cart', --[Knock | Cart] --Teleport mode
+['GunMode'] = 'Aug', --[LMG | Rifle | Aug] --Self explain
+['FlyMode'] = 'Glide', --[Glide | FlyV1 | FlyV2 | Hover | Heaven ]
+['Position'] = 'Back', --[Back | Left | Right | Mid | UpMid | UpLeft | UpLeft | Walk ]
+['Resolver'] = false, --[true | false] Turn On Or Off Resolver If Someone Using Anti Lock [This only applied to attack only for guns it's already have resolver]
+['ChatCmds'] = true, --[true | false] if true stand talks to you
+['AutoMask'] = true, --[true | false] Auto Buy Mask When The Stand Respawn
+['MaskMode'] = 'Riot', --[Surgeon | Paintball | Skull | Pumpkin | Hockey | Ninja | Riot | Breathing] The Stand Will Buy The Mask You Selected
+['AntiStomp'] = true, --[true | false] The Stand Will Cannot Be Stomped Or Grabbed
+['StandMode'] = 'Star Platinum : OverHeaven', --[Star Platinum : OverHeaven | Star Platinum: The World | Star Platinum, Za Warudo! | TheWorld | Cmoon | King Crimson | Killer Queen | MIH | D4C]
+['Smoothing'] = false, --[true | false] if true stand will follow you smoothly
+['AttackMode'] = 'Sky', --[Sky | Under] If [Sky] The Stand Will Attack Infront Of Target And If [Under] The Stand Will Attack In Underground
+['CustomName'] = 'Owner', --Custom Name Text Default Is [Master] Example Of it 'Im Here, Master'
+['Hidescreen'] = false, --[true | false] If you set it to true you will see white blank screen [Save up gpu usage]
+['SummonPoses'] = 'Pose3', --[false | Pose1 | Pose2 | Pose3]
+['LowGraphics'] = false, --[true | false] Turns graphics down so your stand doesnt lag too much
+['CustomPrefix'] = '.', --[ ! | / | . | ? | > | < | $ | ; | : ] Custom target prefix
+['CustomSummon'] = 'Summon!', --Custom [Summon!] Text
+['AutoPrediction'] = false, --[true | false] Turn On Or Off Auto Prediction 
+['AttackDistance'] = 75, --Attack distance for "Attack!, Stab!, Gkill!" max distance
+['AutoSaveLocation'] = 'Downhill_Rooftop', --[Downhill_Rooftop | Uphill_Rooftop | DA_FURNITURE ]
+['AttackPrediction'] = 0.34, --Prediction For Attack Or Targetting
+['AttackAutoPrediction'] = 0.23, --Prediction For Attack Or Targetting
+--//    ! Sounds !     \\--
+--\\ MUST HAVE BOOMBOX //--
+['Sounds'] = true, --[true | false]
+['CustomSong'] = 123456, --Enter A Song ID And Say 'Song!'
+['SummonMusic'] = true, --[true | false]
+['SummonMusicID'] = 'Default' -- Enter a Sound ID Put [Default] If You Would Like The Default Sound
+}loadstring(game:HttpGet("https://xk5ng.github.io/V4.9"))()
