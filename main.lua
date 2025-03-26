@@ -18,7 +18,7 @@ _G.LSDropper = {
 
     fps = 10,
 
-    adx = "LS",
+    adx = "LS-Dev",
     
     Prefix = "/",
 }
