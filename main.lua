@@ -16,7 +16,7 @@ _G.LSDropper = {
         7707209002,
     },
 
-    fps = {5}
+    fps = {5},
     
     Prefix = "/"
 }
