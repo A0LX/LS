@@ -16,8 +16,10 @@ _G.LSDropper = {
         7707209002,
     },
 
-    fps = {5},
+    fps = 5,
+
+    adx = "LS",
     
-    Prefix = "/"
+    Prefix = "/",
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/A0LX/LS-Control/refs/heads/main/Loader.lua"))()
